@@ -27,11 +27,15 @@ public class MainActivity extends AppCompatActivity {
         NetworkRequest request = new NetworkRequest(matrikelnummer);
 
         request.start();
-
         request.join();
 
         updateText(request.getResponse());
+    }
 
+    public void triggerCalculation(View v){
+        String matrikelnummer = getMatrikelnummer(R.id.matrikel_input);
+        String primes = getOnlyPrimes(matrikelnummer);
+        updateText(primes);
     }
 
     private void updateText(String text) {
@@ -43,6 +47,14 @@ public class MainActivity extends AppCompatActivity {
         TextInputLayout matrikel_field = findViewById(inputField);
         String nummer = String.valueOf(matrikel_field.getEditText().getText());
         return nummer;
+    }
+
+    private String getOnlyPrimes(String input){
+        String[] notPrimes={"0","1","2","4","8","9"};
+        for (String number: notPrimes){
+            input = input.replaceAll(number,"");
+        }
+        return input;
     }
 }
 
