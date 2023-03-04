@@ -4,5 +4,5 @@
     <string name="eingabeaufforderung">Bitte gib deine Matrikelnummer ein:</string>
     <string name="abschicken">Abschicken</string>
     <string name="antwortheader">Antwort des Servers</string>
-    <string name="serverantwort">Sample Response</string>
+    <string name="serverantwort">Bitte gib deine Matrikelnummer ein und drücke auf Abschicken um das Ergebnis zu sehen.</string>
 </resources>
