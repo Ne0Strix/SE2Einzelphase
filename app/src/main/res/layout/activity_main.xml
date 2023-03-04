@@ -20,6 +20,7 @@
             android:layout_width="319dp"
             android:layout_height="wrap_content"
             android:hint="@string/matrikelnummer"
+            android:inputType="number"
             android:textAlignment="center"
             android:textColor="#000000"
             android:textSize="20sp"
@@ -67,6 +68,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="@string/serverantwort"
+        android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
