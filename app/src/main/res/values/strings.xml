@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">SE2Einzelphase</string>
+    <string name="matrikelnummer">Matrikelnummer</string>
+    <string name="eingabeaufforderung">Bitte gib deine Matrikelnummer ein:</string>
+    <string name="abschicken">Abschicken</string>
+    <string name="antwortheader">Antwort des Servers</string>
+    <string name="serverantwort">Sample Response</string>
 </resources>
