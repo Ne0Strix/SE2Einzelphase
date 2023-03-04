@@ -23,9 +23,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void triggerRequest(View v) throws IOException, InterruptedException {
-        TextInputLayout matrikel_field = findViewById(R.id.matrikel_input);
-        String matrikelnummer = String.valueOf(matrikel_field.getEditText().getText());
-
+        String matrikelnummer = getMatrikelnummer(R.id.matrikel_input);
         NetworkRequest request = new NetworkRequest(matrikelnummer);
 
         request.start();
@@ -39,6 +37,12 @@ public class MainActivity extends AppCompatActivity {
     private void updateText(String text) {
         TextView output = (TextView) findViewById(R.id.response);
         output.setText(text);
+    }
+
+    private String getMatrikelnummer(int inputField){
+        TextInputLayout matrikel_field = findViewById(inputField);
+        String nummer = String.valueOf(matrikel_field.getEditText().getText());
+        return nummer;
     }
 }
 
