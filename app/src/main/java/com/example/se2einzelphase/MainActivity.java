@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private String getOnlyPrimes(String input){
-        String[] notPrimes={"0","1","2","4","8","9"};
+        String[] notPrimes={"0","1","4","6","8","9"};
         for (String number: notPrimes){
             input = input.replaceAll(number,"");
         }
@@ -71,8 +71,6 @@ class NetworkRequest extends Thread {
     }
 
     public void run() {
-        String serverAnswer;
-
         Socket clientSocket;
         try {
             clientSocket = new Socket("143.205.174.165", 53212);
