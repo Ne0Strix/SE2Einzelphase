@@ -5,7 +5,7 @@
     <string name="abschicken">Abschicken</string>
     <string name="antwortheader">Antwort des Servers</string>
     <string name="serverantwort">Bitte gib deine Matrikelnummer ein und drücke auf Abschicken um das Ergebnis zu sehen.</string>
-    <string name="berechnung_info">Um herauszufinden welche Ziffern deiner Matrikelnummer sind drücke auf den unteren Knopf!</string>
+    <string name="berechnung_info">Um herauszufinden welche Ziffern deiner Matrikelnummer Primzahlen sind drücke auf den unteren Knopf!</string>
     <string name="berechnung_starten">Berechnung Starten</string>
 
 </resources>
